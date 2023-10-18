@@ -1,7 +1,12 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3 {
     margin: 0;
     padding: 0;
+}
+
+p {
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 /* Define general styles for the body */
@@ -36,12 +41,10 @@ nav ul li a {
 
 /* Style the hero section */
 #hero {
-    background-image: url('tennispic.JPEG');
+    background-image: url('TestPic.JPEG');
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     text-align: center;
-    padding-top: 40vh;
     height: 100vh;
     color: rgb(255, 255, 255);
     font-size: 36px;
@@ -53,6 +56,9 @@ section {
     text-align: center;
 }
 
+#about, #portfolio, #contact {
+    border-style: ridge;
+}
 /* Style the portfolio items */
 .portfolio-item {
     margin-bottom: 2rem;
@@ -75,4 +81,8 @@ footer {
 /* Media query for responsive design */
 @media (max-width: 768px) {
     /* Add responsive styles here */
+}
+
+.social {
+    float: right;
 }
