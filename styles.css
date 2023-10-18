@@ -41,7 +41,7 @@ nav ul li a {
 
 /* Style the hero section */
 #hero {
-    background-image: url('TestPic.JPEG');
+    background-image: url('hero_pic.JPEG');
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
