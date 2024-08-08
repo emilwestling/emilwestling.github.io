@@ -6,7 +6,7 @@
 
 ###
 
-<img align="right" height="200" src="headshot.jpg"  />
+<img align="right" height="200" src="images/headshot.jpg"  />
 
 ###
 
@@ -48,9 +48,3 @@
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
   </a>
 </div>
-
-###
-
-<img src="https://raw.githubusercontent.com/emilwestling/emilwestling/output/snake.svg" alt="Snake animation" />
-
-###
