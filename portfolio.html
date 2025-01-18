@@ -4,119 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emil Westling - Portfolio</title>
-    <style>
-      body {
-        background-color: #201d1d;
-        color: #ffffff;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-        line-height: 1.6;
-        padding: 40px;
-      }
-
-      .menu-bar {
-        background-color: #201d1d; /* Dark background for the menu */
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-      }
-
-      .menu-bar a {
-        color: #ffffff; /* White text for menu items */
-        text-decoration: none;
-        padding: 10px 20px;
-        display: inline-block;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 60px auto 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .project {
-        background-color: #333;
-        color: #ffffff;
-        border-radius: 10px;
-        overflow: hidden;
-        text-align: center;
-        width: calc(33.333% - 20px);
-        box-sizing: border-box;
-        transition: transform 0.3s;
-      }
-
-      .project:hover {
-        transform: scale(1.05);
-      }
-
-      .project img {
-        width: 100%;
-        height: 170px;
-        display: block;
-        object-fit: cover;
-      }
-
-      .project h2 {
-        margin: 0;
-        padding: 10px;
-        background-color: #444;
-      }
-
-      .project p {
-        padding: 10px;
-        margin: 0;
-      }
-
-      .project a {
-        text-decoration: none;
-        color: inherit;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
   </head>
   <body>
     <div class="menu-bar">
       <a href="index.html">About Me</a>
-      <a href="portfolio.html"><b>Portfolio</b></a>
+      <a class="active" href="portfolio.html">Portfolio</a>
       <a href="resume.pdf" target="_blank">Resume</a>
     </div>
 
-    <div class="container">
+    <div class="project-container">
       <!-- Project 1 -->
-      <div class="project">
-        <a href="https://www.emilwestling.com/StockPrediction">
-          <img
-            src="images/apple_candlestick.png"
-            alt="Stock Prediction Visual"
-          />
-          <h2>Stock Prediction</h2>
-          <p>Autoregressive predictions of Apple and Amazon stock prices.</p>
+      <div class="project-card">
+        <a href="https://www.emilwestling.com/harrypotterGPT">
+          <img src="images/potter.jpg" alt="Harry Potter image" />
+          <h2>harrypotterGPT</h2>
+          <p>A mini-GPT model that can write inifinite Harry Potter!</p>
         </a>
       </div>
-
-      <!-- Project 2 -->
-      <div class="project">
-        <a href="https://www.emilwestling.com/QuantTrading">
+      <!-- Project 2  -->
+      <div class="project-card">
+        <a href="https://www.emilwestling.com/cancer">
+          <img src="images/Cancer.jpg" alt="Cancer CT scan" />
+          <h2>Cancer Detection</h2>
+          <p>Lung cancer detection using convolutional neural networks.</p>
+        </a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <a href="https://www.emilwestling.com/algortihmic-trading">
           <img
             src="images/portfolio_performance.png"
             alt="Quant Trading Visual"
           />
-          <h2>Quant Trading</h2>
-          <p>
-            Quant Trading project involving crafting portfolios based on LSTM
-            predictions.
-          </p>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://black-scholes-heatmap-7785d38551b8.herokuapp.com/">
-          <img src="images/Black-Scholes-eq.jpg" alt="Black Scholes Equation" />
-          <h2>Option Pricing</h2>
-          <p>Option pricing using the Black-Scholes equation.</p>
+          <h2>Algo Trading</h2>
+          <p>Equity trading based on deep learning forecasting.</p>
         </a>
       </div>
     </div>
