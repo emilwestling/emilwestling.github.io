@@ -3,115 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emil Westling</title>
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
-    /> -->
-    <style>
-      body {
-        background-color: #201d1d;
-        color: #ffffff;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-        line-height: 1.6;
-        padding: 40px;
-      }
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .menu-bar {
-        background-color: #201d1d; /* Dark background for the menu */
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-      }
-      .menu-bar a {
-        color: #ffffff; /* White text for menu items */
-        text-decoration: none;
-        padding: 10px 20px;
-        display: inline-block;
-      }
-    </style>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Emil Westling</title>
   </head>
   <body>
     <!-- Menu Bar -->
     <div class="menu-bar">
-      <a href="index.html"><b>About Me</b></a>
+      <a class="active" href="index.html">About Me</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="resume.pdf" target="_blank">Resume</a>
     </div>
 
     <div class="container markdown-body">
-      <h1 align="left">Hello, My Name is Emil Westling.</h1>
+      <div class="profile-container">
+        <div>
+          <img
+            class="profile-image"
+            src="images/headshot copy (1).jpg"
+            alt="Emil Westling Headshot"
+          />
+        </div>
+        <div class="profile-text">
+          <p>Hello, I'm</p>
+          <h1>Emil Westling</h1>
+          <p>Graduate Student</p>
+        </div>
+      </div>
 
-      <img
-        style="border-radius: 10%"
-        align="right"
-        height="180"
-        src="images/headshot.jpg"
-        alt="Emil Westling Headshot"
-      />
-      <p align="left">
-        Originally from Sweden, I'm a graduate student at Duke University's
-        Fuqua School of Business. I study Business Analytics and Finance
-        graduating in May 2025. I have a strong foundation in Applied
-        Mathematics and Computer Science, having graduated with a Bachelor of
-        Science from Furman University. Looking ahead, I am currently seeking
-        opportunities to apply my analytical and technical skills.
-      </p>
+      <div class="education">
+        <h2 align="left">Education</h2>
 
-      <h2 align="left">About me</h2>
+        <div
+          style="
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <!-- Duke University -->
+          <div style="text-align: center">
+            <img
+              src="images/duke.png"
+              alt="Duke University Logo"
+              style="height: 100px; margin-bottom: 10px"
+            />
+            <p style="font-weight: bold; color: #ffffff">
+              Master's in Business Analytics
+            </p>
+          </div>
 
-      <p align="left">
-        📚 Education:<br />• Master's Degree: Business Analytics with a Finance
-        Track (Duke University-Fuqua School of Business, May 2025)<br />•
-        Bachelor's Degree: Applied Mathematics and Computer Science (Furman
-        University, May 2024)<br /><br />🎯 Goals: <br />• Speak 5 languages
-        fluently<br />• Run a sub 3 hour marathon<br />• Visit 50 countries
-        (currently at 17)<br /><br />🎿 Interests:<br />• Sports (Tennis, Golf,
-        Football, Skiing, and more) <br />• Investing <br />• Reading<br />•
-        Traveling<br /><br />🇬🇧 Languages:<br />• English (fluent)<br />•
-        Swedish (Native)<br />• German (Conversational)
-      </p>
+          <!-- Furman University -->
+          <div style="text-align: center">
+            <img
+              src="images/furman.png"
+              alt="Furman University Logo"
+              style="height: 100px; margin-bottom: 10px"
+            />
+            <p style="font-weight: bold; color: #ffffff">
+              B.S. in Applied Mathematics & Computer Science
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="proficiencies-section">
+        <h2 align="left">Proficiencies</h2>
+        <p>
+          I specialize in leveraging data and technology to drive impactful
+          decisions. My expertise includes the following:
+        </p>
 
-      <h2 align="left">I code with</h2>
+        <div class="proficiencies-container">
+          <!-- Proficiency Card 1 -->
+          <div class="proficiency-card">
+            <img src="images/data-analysis.svg" alt="Data Analysis Icon" />
+            <h3>Data Analysis</h3>
+            <p>
+              Uncover trends and insights through advanced data-driven
+              techniques for effective decision-making.
+            </p>
+          </div>
 
-      <div align="left">
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-          height="40"
-          alt="python logo"
-        />
-        <img width="12" />
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
-          height="40"
-          alt="r logo"
-        />
-        <img width="12" />
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-          height="40"
-          alt="mysql logo"
-        />
-        <img width="12" />
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-          height="40"
-          alt="anaconda logo"
-        />
-        <img width="12" />
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          height="40"
-          alt="javascript logo"
-        />
+          <!-- Proficiency Card 2 -->
+          <div class="proficiency-card">
+            <img src="images/machine-learning.svg" alt="Data Analytics Icon" />
+            <h3>Machine Learning</h3>
+            <p>
+              Utilize predictive models and machine learning to forecast
+              outcomes and optimize business processes.
+            </p>
+          </div>
+
+          <!-- Proficiency Card 3 -->
+          <div class="proficiency-card">
+            <img
+              src="images/data-visualization.svg"
+              alt="Data Visualization Icon"
+            />
+            <h3>Data Visualization</h3>
+            <p>
+              Create compelling dashboards and visual reports to enhance data
+              understanding and communication.
+            </p>
+          </div>
+        </div>
       </div>
 
       <h2 align="left">Get in touch with me</h2>
